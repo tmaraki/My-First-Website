@@ -6,11 +6,10 @@
 
 /* Element Selectors */
 body {
-    position: relative;
+    position:relative;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     color: black;
-    background-color:rgb(255, 255, 255)
     }
 
 header,
@@ -24,17 +23,20 @@ footer {
 
 header {
     position: fixed;
-    border-bottom: 2px solid rgb(196, 157, 125);
+    border-bottom: 5px solid rgb(196, 157, 125);
 }
 
 footer {
-    position: absolute;
-    border-top: 2px solid #fff;
+    border-top: 5px solid rgb(196, 157, 125);;
 }
 
 h1,
 h2 {
     margin: 10px;
+}
+
+h1 {
+    padding-top: 100px;
 }
 
 p {
@@ -96,12 +98,13 @@ form {
 }
 
 label {
-    display: inline-block;
+    display:block
 }
 
 input,
 textarea {
-    color: rgb(45, 45, 45);
+    color: rgb(7, 7, 7);
+    font-display: center;
 }
 
 button {
@@ -123,4 +126,8 @@ button {
 
 .text-left {
     text-align: left;
+}
+
+::placeholder {
+    color:rgb(111, 111, 115)
 }
