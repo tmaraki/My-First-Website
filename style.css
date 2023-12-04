@@ -9,6 +9,7 @@ body {
     position:relative;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
+    background-color: darkgray;
     color: black;
     }
 
@@ -18,36 +19,25 @@ footer {
     height: 60px;
     font-size: 20px;
     background-color: rgb(37, 64, 44);
-    color: cornsilk;
+    color: rgb(0, 0, 0);
     }
 
 header {
-    position: fixed;
-    border-bottom: 5px solid rgb(196, 157, 125);
+    border-bottom: 5px solid rgb(255, 255, 255);
 }
 
 footer {
-    border-top: 5px solid rgb(196, 157, 125);;
-}
-
-h1,
-h2 {
-    margin: 10px;
-}
-
-h1 {
-    padding-top: 100px;
-}
-
-p {
-    padding: 30px 60px;
-    text-align: center;
+    border-top: 5px solid rgb(255, 255, 255);;
 }
 
 nav {
     display: inline;
-    background-color: darkolivegreen;
+    background-color: rgb(37, 64, 44);
     height: 40px;
+}
+
+a{
+    color: white;
 }
 
 li {
@@ -55,39 +45,45 @@ li {
     font-size: 20px;
     padding: 10px 5px;
     margin-right: 20px;
+    background-color: rgb(37, 64, 44);
     color: white;
 }
 
-a {
-    color: white;
+h1,
+h2 {
+    margin: 10px;
+    font-size: 35px;
 }
 
-figure {
+h2 {
+    background-color: rgb(37, 64, 44);
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+    font-size: 20px;
+    margin: 10px;
     display: block;
-    border-width: 1px;
-    border: 20px;
-}
-
-figcaption {
-    padding: 20px 0px;
-    margin-left: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 img {
-    display: block;
-    width: 300px;
+    display:flexbox;
+    width: 250px;
     padding: 30px;
-    margin: 0% 40%;
     border: 30px;
     border-style: solid;
     border-width: 1px;
+    border-radius: 7px;
     }
 
 aside {
-    background-color: tan;
+    background-color: rgb(37, 64, 44);
     padding: 10px;
     border-style: groove;
     border-width: 5px;
+    display: block;
+    box-sizing: border-box;
 }
 
 form {
@@ -95,6 +91,7 @@ form {
     width: 500px;
     padding: 10px;
     text-align: center;
+    background-color: rgb(37, 64, 44);
 }
 
 label {
@@ -116,6 +113,38 @@ button {
 }
 
 /* Class Selectors */
+.Introduction {
+    display: flex;
+    align-items: left;
+    margin: 40px;
+}
+
+.content {
+    margin: 80px 20px;
+  }
+
+.Projects {
+    margin: 20px 40px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: white;
+}
+
+.card {
+    padding: 0 400px;
+    width: 700px;
+    flex: 1 0 200px;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+.card
+img {
+    width: 500px;
+}
+
 .text-center {
     text-align: center;
 }
